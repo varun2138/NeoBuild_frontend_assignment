@@ -26,7 +26,7 @@ const Table = ({ bookings }) => {
             <td className="py-2">{String(index + 1).padStart(2, "0")}</td>
             <td className="py-2">{booking.movie}</td>
             <td className="py-2">{booking.tickets}</td>
-            <td className="py-2">$ {booking.totalAmount}:00</td>
+            <td className="py-2">$ {booking.totalAmount.toFixed(2)}</td>
             <td className="py-2">{booking.time}:00</td>
             <td className="py-2">{formatDate(booking.date)} </td>
           </tr>
