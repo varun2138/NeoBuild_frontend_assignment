@@ -14,7 +14,7 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (username === "naval ravikant" && password === "05111974") {
+    if (username === "naval.ravikant" && password === "05111974") {
       const userData = { username };
       setUser(userData);
       localStorage.setItem("user", JSON.stringify(userData));
@@ -45,7 +45,7 @@ const Login = () => {
               onChange={(e) => setUsername(e.target.value)}
               type="text "
               className="w-full h-full text-black  px-1 outline-none"
-              placeholder="enter your name"
+              placeholder="Enter your name"
             />
           </div>
           <div className="px-2  w-3/4 h-10  rounded-md overflow-hidden flex  items-center gap-2 bg-white">
@@ -55,7 +55,7 @@ const Login = () => {
               onChange={(e) => setPassword(e.target.value)}
               type="text "
               className="w-full h-full text-black  px-1 outline-none"
-              placeholder="enter you password"
+              placeholder="Enter you password"
             />
           </div>
 

@@ -30,7 +30,7 @@ export const GlobalProvider = ({ children }) => {
   const logout = () => {
     setUser(null);
     localStorage.removeItem("user");
-    setBookings([]);
+
     toast.success("user logged out successfully !");
   };
   return (

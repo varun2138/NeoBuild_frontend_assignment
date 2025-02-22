@@ -30,7 +30,7 @@ const BookingComponent = ({ setActivePage }) => {
 
           {filteredMovies.length > 0 && (
             <h1 className="text-lg font-bold capitalize">
-              Good Morning Mr. {user.username} !
+              Good Morning Mr. {user.username.split(".").join(" ")} !
             </h1>
           )}
           <div className="overflow-y-auto h-[400px] 2xl-custom:h-[650px]   scrollbar-hide w-11/12">

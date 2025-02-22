@@ -18,7 +18,9 @@ const Booking = () => {
         <div className="  h-12 w-12 flex justify-center items-center  bg-[#d9d9d9] rounded-full">
           <FaUserCircle fontSize={30} />
         </div>
-        <p className="text-lg font-bold capitalize ">{user.username}</p>
+        <p className="text-lg font-bold capitalize ">
+          {user.username.split(".").join(" ")}
+        </p>
       </div>
       <div className=" pl-6 w-full h-full">
         {activePage === "bookings" ? (
